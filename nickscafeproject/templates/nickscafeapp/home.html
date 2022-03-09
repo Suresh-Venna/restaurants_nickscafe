@@ -1,17 +1,90 @@
 <html>
 
 <head>
-    <meta name="nickscafe" content="width=device-width , initial-scale=1.0">
-    <title>Nicks Cafe1</title>
     {% load static %}
-    <img src="{% static 'nickscafeapp/logo.png' %}" alt="My image" , width="100", height="100">
-    <link rel="stylesheet" type="text/css" href="{% static 'nickscafeapp/home.css' %}">
+    <meta name="viewport" content="width = device-width , initial-scale=1.0">
+    <title>Nicks Cafe</title>
+    <!-- <div class="image-logo">
+        <a href="home">
+            <img align="left" , src="{% static 'nickscafeapp/images/logo.png' %}" alt="My image" , width="150" , height="150">
+        </a>
+    </div> -->
+    <!-- <h1>
+        Nicks Cafe
+    </h1> -->
+    <!-- <h3>Delicious Food</h3>
+    <p>Burgers . Pizza . Sandwiches . Chicken . Fish . Mexican and More...</p>
+
+    <br> -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'nickscafeapp/css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
     <section class="header">
+        <nav>
+            <a href="home"><img src="{% static 'nickscafeapp/images/logo.png' %}" alt="My image" , width="150" , height="150"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Order</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Best Restaurant In & Around Blueridge,TX</h1>
+            <p>We make delicious food ready for you by the time you feel starving</p>
+            <a href="" class="visit-btn">Visit us to know more</a>
+
+        </div>
+
+
 
     </section>
+    <!-- Course -->
+
+    <section class="openhours">
+        <h1>Open Hours : </h1>
+        <p>Monday : 5AM-10PM</p>
+        <p>Tuesday : 5AM-10PM</p>
+        <p>Wednesday: 5AM-10PM</p>
+        <p>Thursday : 5AM-10PM</p>
+        <p>Friday : 5AM-10PM</p>
+        <p>Saturday : 6AM-10PM</p>
+        <p>Sunday : 7AM-10PM</p>
+    </section>
+
+    <section class="location">
+        <h1>Address : </h1>
+        <p>105 S Business, Hwy #78, Blue Ridge, TX 75424</p>
+    </section>
+
+
+
+
+
+    <!-- --JavaScript for toggl emenu--- -->
+    <script>
+        var navLinks = document.getElementById("navlinks")
+
+        function showmenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px"
+        }
+    </script>
 
 </body>
 
