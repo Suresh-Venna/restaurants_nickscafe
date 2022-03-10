@@ -123,8 +123,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 STATICFILES_DIRS = [
-    BASE_DIR / "static/",
-    '/home/ubuntu/static'
+    BASE_DIR / "static/"
 
 ]
 
