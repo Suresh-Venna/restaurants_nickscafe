@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 import os
-try:
-    SECRET_KEY = os.environ['SECRET_KEY']
-except KeyError as e:
-    raise RuntimeError("Could not find a SECRET_KEY in environment") from e
+# try:
+SECRET_KEY = "d0dd1fa0095e55ba5b847e61d58827f38af3abb9778a06e9793047fe00ec75c4d2ce8ca233de69bb"
+#     os.environ['SECRET_KEY']
+# except KeyError as e:
+#     raise RuntimeError("Could not find a SECRET_KEY in environment") from e
     
 
 # SECURITY WARNING: don't run with debug turned on in production!
