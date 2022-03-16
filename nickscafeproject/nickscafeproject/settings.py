@@ -33,7 +33,7 @@ SECRET_KEY = "d0dd1fa0095e55ba5b847e61d58827f38af3abb9778a06e9793047fe00ec75c4d2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [".nickscafe.xyz"]
 
 # Application definition
 
